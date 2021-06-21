@@ -1,0 +1,28 @@
+#!/bin/bash
+
+usbflag=true
+
+while true; do
+	usb=$(lsusb -d 054c:1337)
+	if [ -z "$usb" ]
+	then
+		pidguvc=$(pidof vlc)
+		if [ -z "$pidguvc" ]
+		then
+			:
+		else
+			if ! "$usbflag"
+			then
+				kill -9 $pidguvc
+				usbflag=true
+			fi
+		fi
+	else
+		if "$usbflag"
+		then 
+			usbflag=false
+			screen -d -m vlc v4l2:///dev/video2 :v4l2-standard=ALL :live-caching=0 --fullscreen --intf qt --alsa-audio-device default
+		fi
+	fi
+	sleep .5
+done
