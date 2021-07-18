@@ -1,0 +1,5 @@
+/media/onthego/RegularPurpose/VitaCore/hello_world/build/CMakeFiles/rebuild_cache.dir
+/media/onthego/RegularPurpose/VitaCore/hello_world/build/CMakeFiles/edit_cache.dir
+/media/onthego/RegularPurpose/VitaCore/hello_world/build/CMakeFiles/hello_world.vpk.dir
+/media/onthego/RegularPurpose/VitaCore/hello_world/build/CMakeFiles/hello_world.self.dir
+/media/onthego/RegularPurpose/VitaCore/hello_world/build/CMakeFiles/hello_world.dir

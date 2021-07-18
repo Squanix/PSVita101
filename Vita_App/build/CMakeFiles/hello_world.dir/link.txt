@@ -1,0 +1,1 @@
+/media/onthego/Apps/VitaSDK/vitasdk/bin/arm-vita-eabi-gcc  -Wl,-q -Wall -Wl,-z,nocopyreloc CMakeFiles/hello_world.dir/src/main.c.obj CMakeFiles/hello_world.dir/common/debugScreen.c.obj -o hello_world   -L/media/onthego/RegularPurpose/VitaCore/hello_world/build  -lSceLibKernel_stub -lSceDisplay_stub 
